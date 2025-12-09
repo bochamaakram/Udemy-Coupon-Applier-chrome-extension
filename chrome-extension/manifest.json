@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Udemy Coupon Applier",
+  "version": "2.0",
+  "description": "Automates coupon application and checkout on Udemy.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Udemy Coupon Applier"
+  }
+}
